@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background with gradient */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #8ed0c5, #ffe77e);
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Form container */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        /* Form heading */
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Form group styling */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 16px;
+            color: #444;
+            font-weight: 600;
+        }
+
+        /* Input fields and dropdown */
+        input, select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            background: #f3f3f3;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus {
+            border-color: #75c8ff;
+            background: #fff;
+            outline: none;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: linear-gradient(to right, #4A90E2, #2575FC);
+            color: white;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(to right, #2575FC, #1A5BBF);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Details Form</h1>
+        <form action="firstpage.html" method="POST">
+            <div class="form-group">
+                <label for="name">Student Name</label>
+                <input type="name" id="name" name="name" placeholder="Enter your name" required/>
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch</label>
+                <input type="text" id="branch" name="branch" placeholder="Enter your branch" required/>
+            </div>
+            <div class="form-group">
+                <label for="registration_no">Registration No</label>
+                <input type="number" id="registration_no" name="registration_no" placeholder="Enter your registration number" required/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+            </div>
+            <div class="form-group">
+                <label for="college">Select College</label>
+                <select id="college" name="college" required>
+                    <option value="" disabled selected>Select your college</option>
+                    <option value="arka_jain_university">ARKA JAIN UNIVERSITY</option>
+                    <option value="al_kabir_polytechnic">Al-Kabir Polytechnic</option>
+                    <option value="govt_poly_adityapur">Government Polytechnic Adityapur</option>
+                    <option value="govt_women_polytechnic">Government Women's Polytechnic, Jamshedpur</option>
+                    <option value="govt_poly_kharsawan">Government Polytechnic Kharsawan</option>
+                    <option value="govt_poly_dumka">Government Polytechnic Dumka</option>
+                    <option value="netaji_subhas_university">Netaji Subhas University</option>
+                </select>`  
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
